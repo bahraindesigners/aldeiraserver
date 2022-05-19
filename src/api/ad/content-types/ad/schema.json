@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ads",
+  "info": {
+    "singularName": "ad",
+    "pluralName": "ads",
+    "displayName": "Ad",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Seller": {
+      "type": "string",
+      "required": true
+    },
+    "Code": {
+      "type": "string",
+      "unique": true,
+      "required": false
+    },
+    "Exp": {
+      "type": "date"
+    },
+    "Whatsapp": {
+      "type": "string",
+      "required": true
+    },
+    "Instagram": {
+      "type": "string",
+      "required": true
+    },
+    "Location": {
+      "type": "string"
+    },
+    "Key": {
+      "type": "uid",
+      "targetField": "Code"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "Paid": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
